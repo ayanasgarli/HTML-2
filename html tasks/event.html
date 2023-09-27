@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="full-name">
+                <label for="full-name">Full Name:</label>
+                <input id="full-name" name="full-name" type="text" placeholder="Enter you name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email Address:</label>
+                <input id="email" name="email" type="email" placeholder="enter your email" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number:</label>
+                <input id="number" name="number" type="tel" placeholder="enter your phone number" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Event Details</legend>
+            <div class="event-name">
+                <label for="event">Event Name:</label>
+                <input id="event" name="event" type="text" required>
+            </div>
+            <div class="event-date">
+                <label for="ev-date">Event Date:</label>
+                <input id="ev-date" name="ev-date" type="date" required>
+            </div>
+            <div class="event-location">
+                <label for="ev-loc">Event Location:</label>
+                <input id="ev-loc" name="ev-loc" type="text" maxlength="30">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Ticket Selection:</legend>
+            <div class="ticket">
+                <span>Choose ticket type:</span> <br>
+                <input name="ticket" id="standart" type="radio"> 
+                <label for="standart">Standart</label> <br>
+                <input name="ticket" id="VIP" type="radio">
+                <label for="VIP">VIP</label>
+            </div>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input id="quantity" name="quantity" type="number" min="0" max="200" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dietary Preferences:</legend>
+            <div class="dietary">
+                <span>Do you have any dietary preferences?</span> <br>
+                <input squared id="vegetarian" name="dietary" type="radio">
+                <label for="dietary">Vegetarian</label> <br>
+                <input id="vegan" name="dietary" type="radio">
+                <label for="dietary">Vegan</label> <br>
+                <input id="Gluten-Free" name="dietary" type="radio">
+                <label for="dietary">Gluten-Free</label>
+            </div>
+        </fieldset>
+        <div class="comments">
+            <label for="comments">Additional Comments:</label> <br>
+            <textarea name="comments" id="comments" cols="70" rows="5" placeholder="Give your feedback" required></textarea>
+        </div>
+        <div class="terms">
+            <input id="terms" name="terms" type="checkbox" required>
+            <label for="terms">I agree to the terms and conditions</label>
+           
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
